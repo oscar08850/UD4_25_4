@@ -34,7 +34,7 @@ public class ControladorPeliculas {
 	}
 
 	@GetMapping("/peliculas/{id}")
-	public Peliculas leerCaja(@PathVariable(name = "dni") Long id) {
+	public Peliculas leerCaja(@PathVariable(name = "id") Long id) {
 
 		Peliculas pelicula = new Peliculas();
 
@@ -63,8 +63,8 @@ public class ControladorPeliculas {
 		return pelicula_actualizado;
 	}
 
-	@DeleteMapping("/peliculas/{numReferencia}")
-	public void borrarEmpleado(@PathVariable(name = "numReferencia") Long id) {
+	@DeleteMapping("/peliculas/{id}")
+	public void borrarEmpleado(@PathVariable(name = "id") Long id) {
 		peliculasServiceImpl.borrarPeliculaById(id);
 	}
 

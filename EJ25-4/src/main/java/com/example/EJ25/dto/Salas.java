@@ -22,8 +22,8 @@ public class Salas {
 	private String nombre;
 	
 	@ManyToOne
-	@JoinColumn(name = "pelicula_id")
-	private Peliculas pelicula_id;
+	@JoinColumn(name = "peliculas_id")
+	private Peliculas peliculas_id;
 
 	// Constructores
 
@@ -34,7 +34,7 @@ public class Salas {
 	public Salas(Long id, String nombre, Peliculas pelicula_id) {
 		this.id = id;
 		this.nombre = nombre;
-		this.pelicula_id = pelicula_id;
+		this.peliculas_id = pelicula_id;
 	}
 	
 	
@@ -61,18 +61,18 @@ public class Salas {
 
 
 	public Peliculas getPelicula_id() {
-		return pelicula_id;
+		return peliculas_id;
 	}
 
 
 	public void setPelicula_id(Peliculas pelicula_id) {
-		this.pelicula_id = pelicula_id;
+		this.peliculas_id = pelicula_id;
 	}
 
 
 	@Override
 	public String toString() {
-		return "Salas [id=" + id + ", nombre=" + nombre + ", pelicula_id=" + pelicula_id + "]";
+		return "Salas [id=" + id + ", nombre=" + nombre + ", pelicula_id=" + peliculas_id + "]";
 	}
 
 }

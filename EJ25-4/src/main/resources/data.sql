@@ -16,15 +16,15 @@ create table salas(
     
 
 
-insert into peliculas (nombre,calificacion_edad) values('Peli 1', '18');
-insert into peliculas (nombre,calificacion_edad) values('Peli 2', '18');
-insert into peliculas (nombre,calificacion_edad) values('Peli 3', '13');
-insert into peliculas (nombre,calificacion_edad) values('Peli 4', '12');
-insert into peliculas (nombre,calificacion_edad) values('Peli 5', '13');
+insert into peliculas (nombre,calificacion_edad) values('Peli 1', 18);
+insert into peliculas (nombre,calificacion_edad) values('Peli 2', 18);
+insert into peliculas (nombre,calificacion_edad) values('Peli 3', 13);
+insert into peliculas (nombre,calificacion_edad) values('Peli 4', 12);
+insert into peliculas (nombre,calificacion_edad) values('Peli 5', 13);
 
 
-insert into salas (nombre, peliculas_id) values('Sala 1','1');
-insert into salas (nombre, peliculas_id) values('Sala 2','2');
-insert into salas (nombre, peliculas_id) values('Sala 3','3');
-insert into salas (nombre, peliculas_id) values('Sala 4','3');
-insert into salas (nombre, peliculas_id) values('Sala 5','5');
+insert into salas (nombre, peliculas_id) values('Sala 1',1);
+insert into salas (nombre, peliculas_id) values('Sala 2',2);
+insert into salas (nombre, peliculas_id) values('Sala 3',3);
+insert into salas (nombre, peliculas_id) values('Sala 4',3);
+insert into salas (nombre, peliculas_id) values('Sala 5',5);

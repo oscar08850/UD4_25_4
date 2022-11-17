@@ -21,12 +21,12 @@ public class ControladorSalas {
 	@Autowired
 	SalasServiceImpl salasServiceImpl;
 
-	@GetMapping("/almacenes")
+	@GetMapping("/salas")
 	public List<Salas> listarAlmacenes() {
 		return salasServiceImpl.listarSalas();
 	}
 
-	@PostMapping("/almacenes")
+	@PostMapping("/salas")
 	public Salas crearAlmacenes(@RequestBody Salas sala) {
 
 		return salasServiceImpl.crearSalas(sala);
